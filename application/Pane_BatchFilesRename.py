@@ -43,7 +43,7 @@ class PaneBatchFilesRename(QWidget, Ui_Main):
         # 判断选中的文件夹中是否有文件
         if len(self.files_name) == 0:
             message_box = QMessageBox(self)
-            message_box.setWindowIcon(QIcon('resource/images/message-exclamatory-mark.PNG'))
+            message_box.setWindowIcon(QIcon(':/main/images/message-exclamatory-mark.PNG'))
             message_box.setIcon(QMessageBox.Information)
             message_box.setWindowTitle('注意:')
             message_box.setText('<h1>当前文件夹下不存在文件,请从新添加</h1>')
@@ -68,7 +68,7 @@ class PaneBatchFilesRename(QWidget, Ui_Main):
     def apply(self):
         if len(self.files_name) == 0 or len(self.new_files_name)==0:
             message_box = QMessageBox(self)
-            message_box.setWindowIcon(QIcon('resource/images/message-exclamatory-mark.PNG'))
+            message_box.setWindowIcon(QIcon(':/main/images/message-exclamatory-mark.PNG'))
             message_box.setIcon(QMessageBox.Information)
             message_box.setWindowTitle('注意:')
             message_box.setText('<h1>请先执行预览功能,然后应用</h1>')
